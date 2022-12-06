@@ -1,0 +1,68 @@
+/*Div1 - Agradecimento*/
+
+#texto{
+    background-color: #c53939;
+    width: 30%;
+    min-height: 100px;
+    margin: 40px;
+    border-radius: 30px 30px 10px 30px;
+}
+
+/*Div2 - Mural*/
+
+#div2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+img{
+    width: 100px;
+    height: 100px;
+  }
+
+.divFoto{
+    text-align: center;
+    margin-top: 100px;
+}
+
+/*Div3 - Projetos*/
+#div3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#blocoRelogioDigital{
+    border: 2px solid black;
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+    margin: 25px;
+}
+#blocoCalculaQuadrado{
+    border: 2px solid black;
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+    margin: 25px;
+}
+
+#blocoTestePortugues{
+    border: 2px solid black;
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+    margin: 25px;
+}
+
+
+/*Div4 - Colaboradores*/
+#div4 {
+    text-align: center;
+}
+
+#div4 > #areaLogo{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#div4 > #areaLogo > img{margin: 0 auto;}
+

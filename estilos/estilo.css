@@ -1,0 +1,48 @@
+/*Reset*/
+@import url("/var.css");
+@import url(layout.css);
+@import url(div.css);
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+/*MENU PRINCIPAL*/
+
+.menu{
+    position: fixed;
+    background-color: #4c30c9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: -130px;
+}
+#imagem-pro-crianca{
+    width: 100px;
+
+}
+li{
+   display: inline;
+   text-decoration: none;
+   padding: 102px;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+
+
+
+
+
+
