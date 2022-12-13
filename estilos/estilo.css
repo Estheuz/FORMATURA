@@ -1,5 +1,4 @@
-/*Reset*/
-@import url("/var.css");
+
 @import url(layout.css);
 @import url(div.css);
 *{
@@ -13,20 +12,17 @@
 .menu{
     position: fixed;
     background-color: #4c30c9;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     width: 100%;
-    margin-top: -130px;
+    margin-top: -140px;
 }
 #imagem-pro-crianca{
     width: 100px;
 
 }
 li{
-   display: inline;
-   text-decoration: none;
-   padding: 102px;
+    display: inline;
+    text-decoration: none;
+    padding: 50px;
 }
 
 a{
@@ -41,8 +37,11 @@ html {
 
 
 
-
-
-
+.lista{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    }
 
 

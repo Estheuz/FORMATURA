@@ -1,28 +1,43 @@
 /*Div1 - Agradecimento*/
 
 #texto{
-    background-color: #c53939;
-    width: 30%;
-    min-height: 100px;
-    margin: 40px;
-    border-radius: 30px 30px 10px 30px;
+    width: 40%;
+    margin-top: 150px;
+    margin-left: 100px;
+    font-style: italic;
 }
+#foto-formandos{
+    padding: 40px;
+    width: 500px;
+    height: 350px;
+    margin-top: 150px;
+ }
 
 /*Div2 - Mural*/
 
 #div2{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: -100px;
 }
 
-img{
-    width: 100px;
-    height: 100px;
-  }
 
 .divFoto{
     text-align: center;
     margin-top: 100px;
+}
+.divFoto > h3{
+    padding: 6px;
+}
+.divFoto > a > img{
+    width: 160px;
+    height: 160px;
+    border: 2px solid rgb(54, 54, 54);
+    border-radius: 20px;
+}
+.divFoto > a  :hover{
+    border: 3px solid black;
+    border-radius: 18px;
 }
 
 /*Div3 - Projetos*/
@@ -30,29 +45,59 @@ img{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-#blocoRelogioDigital{
+.bloco{
     border: 2px solid black;
     height: 250px;
     width: 250px;
     padding: 10px;
     margin: 25px;
 }
-#blocoCalculaQuadrado{
-    border: 2px solid black;
-    height: 250px;
-    width: 250px;
-    padding: 10px;
-    margin: 25px;
+.bloco > h1{
+    text-align: center;
 }
-
-#blocoTestePortugues{
-    border: 2px solid black;
-    height: 250px;
-    width: 250px;
-    padding: 10px;
-    margin: 25px;
+ .relogio{
+    text-align: center;
+}
+.relogio > h1{
+    padding-bottom: 36px;
+}
+.relogio > div{
+    margin-top: 6px;
+    padding: 6px;
 }
 
+
+.calculadoraDeQuadrado{
+    text-align: center;
+}
+.calculadoraDeQuadrado > h1{
+    padding: 6px;
+} 
+.calculadoraDeQuadrado > h2{
+    margin-top: 12px;
+}
+
+.testePortugues > .textoCentral{
+ text-align: center;
+}
+.testePortugues > p{
+    padding: 2px;
+}
+#btn{
+    margin-left: 140px;
+    margin-top: 40px;
+}
+.max-width{
+    text-align: center;
+}
+.area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    padding: 10px;
+    border-radius: 44px;
+}
 
 /*Div4 - Colaboradores*/
 #div4 {
@@ -64,5 +109,9 @@ img{
     grid-template-columns: repeat(5, 1fr);
 }
 
-#div4 > #areaLogo > img{margin: 0 auto;}
+#div4 > #areaLogo > img{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
 

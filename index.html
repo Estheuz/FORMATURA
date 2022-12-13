@@ -17,27 +17,31 @@
 <body>
     <header class="menu">
         <nav>
-
-
-
             <ul class="lista">
-                <li><a href="#div1">div1</a></li>
+                <img src="https://imagens3.ne10.uol.com.br/blogsne10/social1/uploads/2016/08/Movimento-Pro-crian%C3%A7a.png"
+                    alt="procriança" id="imagem-pro-crianca">
+                <li><a href="#div1">Agradecimento</a></li>
                 <li><a href="#div2">Mural dos formandos</a></li>
-                <li><a href="#div3">div3</a></li>
-                <li><a href="#div4">div4</a></li>
+                <li><a href="#div3">Projetos</a></li>
+                <li><a href="#div4">Apoiadores</a></li>
             </ul>
-            <img src="https://imagens3.ne10.uol.com.br/blogsne10/social1/uploads/2016/08/Movimento-Pro-crian%C3%A7a.png"
-                alt="procriança" id="imagem-pro-crianca">
         </nav>
     </header>
     <div id="div1">
         <div id="texto">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, modi ab? Harum laborum atque, non
-                beatae eos nam aliquam iste! Aspernatur in vitae voluptatem amet quasi esse rerum consequatur delectus.
-            </p>
+            <p><i> No início éramos uma turma composta por 18 alunos, nas primeiras aulas estavamos um pouco tímidos e
+                    tivemos até escrever uma carta de apresentação para nós conhecer, mas com o tempo e com as
+                    atividades que fazíamos em conjunto, começamos a nós relacionar melhor, criar laços e desenvolver
+                    amizade, passamos por diversas dificuldades desde o início, como por exemplo, as chuvas fortes que
+                    impactaram o estado como um todo, dificuldade com passagem e aprender algo completamente novo que
+                    era programação, mas superamos tudo isso, permanecemos até o final e tivemos muito aprendizado em
+                    Matemática, Leitura, Redação, Educação Financeira, Prototipagem, Saúde, HTML, CSS e Java Script.
+                    Alguns colegas chegaram e outros partiram e hoje somos 9 alunos, mas a caminhada até aqui valeu a
+                    pena, levaremos os aprendizados e os amigos feitos aqui para nossas vidas. Obrigado a todos os
+                    envolvidos por essa jornada.</i></p>
         </div>
         <div>
-            <img src="/baixados (1).png" alt="aa">
+            <img src="foto fotmatura.jpg" alt="foto dos formandos" id="foto-formandos">
         </div>
     </div>
 
@@ -46,49 +50,57 @@
 
         <div class="divFoto">
             <h3>Matheus Correia</h3>
-            <img src="baixados (1).png">
+            <a href="https://github.com/Estheuz" target="_blank">
+                <img src="fotos/Matheus.png"></a>
         </div>
 
         <div class="divFoto">
             <h3>Júlia Isabelly</h3>
-            <img src="baixados (1).png">
+            <a href="https://github.com/Juh2000" target="_blank">
+                <img src="fotos/JuliaIsa.png"></a>
         </div>
 
         <div class="divFoto">
             <h3>Guilherme Vinícius</h3>
-            <img src="baixados (1).png">
+            <a href="https://github.com/GuiLeite18" target="_blank">
+                <img src="fotos/minha_foto_do_site-removebg-preview.png"></a>
         </div>
 
         <div class="divFoto">
             <h3>Júlia vitória</h3>
-            <img src="baixados (1).png">
+            <a href="https://github.com/juliav18" target="_blank">
+                <img src="fotos/Julia_removebg-preview (1).png"></a>
         </div>
 
         <div class="divFoto">
             <h3>Renato Fagner</h3>
-            <img src="baixados (1).png">
+            <a href="https://github.com/Eurenatofagner">
+                 <img src="fotos/1362F357-6091-48BB-8F43-D7B0B1CC9224-removebg-preview.png">
+            </a>
         </div>
 
         <div class="divFoto">
             <h3>Gislayne Aragão</h3>
-            <img src="baixados (1).png">
+            <a href="https://github.com/GissAragao" target="_blank">
+                <img src="fotos/foto_de_Gi-removebg-preview.png"></a>
         </div>
 
         <div class="divFoto">
             <h3>David Gutembergue</h3>
-            <img src="baixados (1).png">
+            <a href="https://github.com/DeividGut32" target="_blank">
+                <img src="fotos/foto_de_david-removebg-preview.png"></a>
         </div>
 
         <div class="divFoto">
             <h3>Kilde</h3>
-            <img src="baixados (1).png">
+
         </div>
 
     </div>
 
 
     <div id="div3">
-        <div id="blocoRelogioDigital">
+        <div class="bloco">
 
             <div class="relogio">
                 <h1>Relogio digital</h1>
@@ -112,101 +124,127 @@
 
         </div>
 
-        <div id="blocoCalculaQuadrado">
-            <h1>numero ao quadrado</h1>
+        <div class="bloco">
+            <div class="calculadoraDeQuadrado">
+                <h1>numero ao quadrado</h1>
 
-            <input type="number" id="numero">
-            <button onclick="calcularQuadrado()">calcular</button>
+                <input type="number" id="numero">
+                <button onclick="calcularQuadrado()">calcular</button>
 
-            <h2 id="areaRespostaNumeroAoQuadrado"></h2>
+                <h2 id="areaRespostaNumeroAoQuadrado"></h2>
+            </div>
         </div>
 
-        <div id="blocoTestePortugues">
-            <h1>teste portugues</h1>
-            <p>o que é um verbo?</p>
+        <div class="bloco">
+            <div class="testePortugues">
+                <h1 class="textoCentral">teste portugues</h1>
+                <p>o que é um verbo?</p>
 
-           <p> <input type="radio" id="resposta"> uma caracteristicas</p>
-           <p> <input type="radio" id="resposta"> um objeto</p>
-           <p> <input type="radio" id="resposta"> uma ação</p>
-           <p> <input type="radio" id="resposta"> um tipo de poema</p>
-            <button onclick="responderTeste()">responder</button>
+                <p> <input type="radio" name="resposta"> uma caracteristicas</p>
+                <p> <input type="radio" name="resposta"> um objeto</p>
+                <p> <input type="radio" name="resposta"> uma ação</p>
+                <p> <input type="radio" name="resposta"> um tipo de poema</p>
+                <button onclick="responderTeste()" id="btn">responder</button>
 
-            <h2 id="areaRespostaTestePortugues"></h2>
+                <h2 id="areaRespostaTestePortugues" class="textoCentral"></h2>
+            </div>
         </div>
 
-        <div id="aa">
-            <h1>aa</h1>
-            
+        <div class="bloco">
+
+            <div class="max-width">
+                <h1>Cronometro</h1> <br> <br>
+                <button onclick="start();" class="bg-green">Iniciar</button>
+                <button onclick="pause();" class="bg-yellow">Pausar</button>
+                <button onclick="stop();" class="bg-red">Zerar</button>
+                <h1 id="counter">00:00:00</h1>
+            </div>
+
+        </div>
+        <div class="bloco">
+            <h1>calcula media</h1>
+            <label>Nota 1 <input type="number" id="nota1"></label>
+            <label>Nota 2 <input type="number" id="nota2"></label>
+
+            <button onclick="calcularMedia()">calcular</button>
+            <h2 id="areaRespostaCalculaMedia"></h2>
+        </div>
+        <div class="bloco">
+            <h1>leitor hover</h1>
+            <div class="area">
+                <p>espaço</p>
+            </div>
         </div>
 
     </div>
 
 
     </div>
-    <div id="div4"> <h1>AGRADECIMENTO</h1>
-       <div id="areaLogo">
-        <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/celpe.jpg"
-        alt="apoiador-celpe" width="141px">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/compesa.png"
-        alt="logo-compesa">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/mapfre.jpg"
-        alt="logo-fundação-mapfre">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/logo-sundown.png"
-        alt="logo-sundown">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/bremen.jpg"
-        alt="logo-bremen">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/hmb-pateo.jpg"
-        alt="logo-hmb-pateo">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/grupo-raymundo-da-fonte.jpg"
-        alt="logo-raymundo">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/brazilfoundation.jpg"
-        alt="brazil-foudation">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/martpet.jpg"
-        alt="logo-martpet">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/espro.jpg"
-        alt="logo-espro">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/portodigital.jpg"
-        alt="logo-porto digital">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/acp.jpg"
-        alt="logo-acp">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/copergas.jpg"
-        alt="logo-copergas">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/sebrae.jpg"
-        alt="logo-sebrae">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/infraero.jpg"
-        alt="logo-infraero">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/solar-cocacola.jpg"
-        alt="logo-coca-cola">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/interne.png"
-        alt="logo-interne-educação">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/logo-clin.png"
-        alt="plano-odonto-digital">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/moura.jpg"
-        alt="logo-moura">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/petro.jpg"
-        alt="logo-petro">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/avantia.jpg"
-        alt="logo-avantia">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/toyolex.jpg"
-        alt="logo-toyolex">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/true-change.jpg"
-        alt="logo-true-change">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/lei-de-incentivo.jpg"
-        alt="logo-cultura">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/logo_chesf.jpg"
-        alt="logo-chesf">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/logo_dislub.jpg"
-        alt="logo-dislub-equador">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/logo_mardisa.jpg"
-        alt="logo-mardisa">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/logo_fiori.png"
-        alt="logo-fiori">
-    <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/governo.jpg"
-        alt="logo-patria-amada-brasil">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw_Q0n8dlTILpsEoaIgXJ6IBTFS7lvVgeX-2yVgsAj6qBodQuh2ZvGbM1bv7gdb_g4QCM&usqp=CAU"
-        alt="logo-divina-pharma">
+    <div id="div4">
+        <h1>AGRADECEMOS AOS APOIADORES</h1>
+        <div id="areaLogo">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/celpe.jpg"
+                alt="apoiador-celpe" width="141px">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/compesa.png"
+                alt="logo-compesa">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/mapfre.jpg"
+                alt="logo-fundação-mapfre">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/logo-sundown.png"
+                alt="logo-sundown">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/bremen.jpg"
+                alt="logo-bremen">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/hmb-pateo.jpg"
+                alt="logo-hmb-pateo">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/grupo-raymundo-da-fonte.jpg"
+                alt="logo-raymundo">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/brazilfoundation.jpg"
+                alt="brazil-foudation">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/martpet.jpg"
+                alt="logo-martpet">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/espro.jpg"
+                alt="logo-espro">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/portodigital.jpg"
+                alt="logo-porto digital">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/acp.jpg"
+                alt="logo-acp">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/copergas.jpg"
+                alt="logo-copergas">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/sebrae.jpg"
+                alt="logo-sebrae">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/infraero.jpg"
+                alt="logo-infraero">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/solar-cocacola.jpg"
+                alt="logo-coca-cola">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/interne.png"
+                alt="logo-interne-educação">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/logo-clin.png"
+                alt="plano-odonto-digital">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/moura.jpg"
+                alt="logo-moura">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/petro.jpg"
+                alt="logo-petro">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/avantia.jpg"
+                alt="logo-avantia">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/toyolex.jpg"
+                alt="logo-toyolex">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/true-change.jpg"
+                alt="logo-true-change">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/lei-de-incentivo.jpg"
+                alt="logo-cultura">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/logo_chesf.jpg"
+                alt="logo-chesf">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/logo_dislub.jpg"
+                alt="logo-dislub-equador">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/logo_mardisa.jpg"
+                alt="logo-mardisa">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/logo_fiori.png"
+                alt="logo-fiori">
+            <img src="https://www.movimentoprocrianca.org.br/wp-content/themes/bold_theme/images/parceiros/governo.jpg"
+                alt="logo-patria-amada-brasil">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw_Q0n8dlTILpsEoaIgXJ6IBTFS7lvVgeX-2yVgsAj6qBodQuh2ZvGbM1bv7gdb_g4QCM&usqp=CAU"
+                alt="logo-divina-pharma">
 
-       </div>
+        </div>
     </div>
 
     <footer></footer>

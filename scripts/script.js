@@ -21,101 +21,113 @@ const relogio = setInterval(function time() {
 
 })
 
+function calcularQuadrado(){
+    let numero = document.querySelector("#numero")
+    let areaResposta = document.querySelector("#areaRespostaNumeroAoQuadrado")
+    let resultado = numero.value * numero.value
 
+    areaResposta.innerHTML = numero.value + " ao quadrado é " + resultado
+}
 
-//////////
-
-function criarPersonagem() {
-    let nome = document.getElementById("nome")
-    let areaNome = document.getElementById("areaNome")
-
-
-    let sexoEscolhido = document.getElementsByName("sexo")
-    let homem = document.getElementById("areaSexoHomem")
-    let mulher = document.getElementById("areaSexoMulher")
-
-    let classes = document.getElementById("classes")
-    let areaClasse = document.getElementById("areaClasse")
-
-    let paladino = document.getElementById("classePaladino")
-    let necromante = document.getElementById("classeNecromante")
-    let mago = document.getElementById("classeMago")
-    let vagabundo = document.getElementById("classeVagabundo")
-    let assassino = document.getElementById("classeAssassino")
-    let barbaro = document.getElementById("classeBarbaro")
-
-    let btn = document.getElementById("btn")
-    let btn2 = document.getElementById("btn2")
-
-
-    areaNome.innerHTML = nome.value;
-
-
-
-    for (let i = 0; i < sexoEscolhido.length; i++) {
-        if (sexoEscolhido[0].checked == true) {
-            homem.hidden = false
-            mulher.hidden = true
+function responderTeste(){
+    let respostas = document.getElementsByName("resposta")
+    let areaResultado = document.querySelector("#areaRespostaTestePortugues")
+    let btn = document.querySelector("#btn")
+    for(let i=0; i<respostas.length; i++){
+        if(respostas[2].checked == true){
+           areaResultado.innerHTML = "Acertou"
         }
-        else if (sexoEscolhido[1].checked == true) {
-            mulher.hidden = false
-            homem.hidden = true
+        else{
+            areaResultado.innerHTML = "Errou"
         }
     }
-
-    areaClasse.innerHTML = classes.value;
-
-    if (classes.value == "paladino") { paladino.hidden = false }
-    else if (classes.value == "necromante") { necromante.hidden = false }
-    else if (classes.value == "mago") { mago.hidden = false }
-    else if (classes.value == "vagabundo") { vagabundo.hidden = false }
-    else if (classes.value == "assassino") { assassino.hidden = false }
-    else if (classes.value == "barbaro") { barbaro.hidden = false }
-
-
-    btn.disabled = true;
-    btn2.hidden = false
+    
 }
 
-function jogar() {
-    let ataque = document.getElementById("ataque")
-    let ataqueEspecial = document.getElementById("ataqueEspecial")
+function calcularMedia(){
+    let nota1 = document.querySelector("#nota1")
+    let nota2 = document.querySelector("#nota2")
+    let media = ((parseInt(nota1.value) + parseInt(nota2.value)) / 2)
+    let MostrarMedia = document.getElementById("areaRespostaCalculaMedia")
 
-    ataque.hidden = false
-    ataqueEspecial.hidden = false
-}
-
-function ataque() {
-    let areaInforCombate1 = document.getElementById("areaInformacaoCombate1")
-    let areaInforCombate2 = document.getElementById("areaInformacaoCombate2")
-    let valorAtaque = parseInt(Math.random() * 10)
-    let valorAtaqueMonstro = parseInt(Math.random() * 10)
-
-
-    areaInforCombate1.innerHTML = "você deu " + valorAtaque + " de dano";
-    areaInforCombate2.innerHTML = "você recebeu " + valorAtaqueMonstro + " de dano";
-
-    if (valorAtaque > 12) {
-        areaInforCombate1.innerHTML = "você você matou o monstro";
+    if(media > 6) {
+        MostrarMedia.innerHTML = "Media " + media + " Aluno passou"
     }
-    else if (valorAtaqueMonstro > 12)
-        areaInforCombate2.innerHTML = "O monstro matou você";
+    else if(nota1.value === "" || nota2.value === ""){
+        MostrarMedia.innerHTML = "Insira as duas notas"}
 
-}
-
-function ataqueEspecial() {
-    let areaInforCombate1 = document.getElementById("areaInformacaoCombate1")
-    let areaInforCombate2 = document.getElementById("areaInformacaoCombate2")
-    let valorAtaqueEspecial = parseInt(Math.random() * 15)
-    let valorAtaqueMonstro2 = parseInt(Math.random() * 10)
-
-    areaInforCombate1.innerHTML = "você deu " + valorAtaqueEspecial + " de dano";
-    areaInforCombate2.innerHTML = "você recebeu " + valorAtaqueMonstro2 + " de dano";
-
-    if (valorAtaqueEspecial > 12) {
-        areaInforCombate1.innerHTML = "você você matou o monstro";
+    else{
+        MostrarMedia.innerHTML = "Media " + media + " aluno reprovado"
     }
-    else if (valorAtaqueMonstro2 > 12)
-        areaInforCombate2.innerHTML = "O monstro matou você";
 }
 
+let espaco = document.querySelector(".area")
+espaco.addEventListener('click', clicar)
+espaco.addEventListener('mouseenter', entrar)
+espaco.addEventListener('mouseout', sair)
+
+function clicar() {
+    espaco.innerText = "Clicou!"
+    espaco.style.background = 'tomato'
+}
+
+function entrar(){
+    espaco.innerText = "Entrou!"
+    espaco.style.background = 'green'
+}
+
+function sair(){
+    espaco.innerText = "Saiu!"
+    espaco.style.background = 'tomato'
+}
+
+var hh = 0;
+var mm = 0;
+var ss = 0;
+
+var tempo = 1000;
+var cron;
+
+
+function start() {
+    cron = setInterval(() => { timer(); }, tempo);
+}
+
+
+function pause() {
+    clearInterval(cron);
+}
+
+
+function stop() {
+    clearInterval(cron);
+    hh = 0;
+    mm = 0;
+    ss = 0;
+
+    document.getElementById('counter').innerText = '00:00:00';
+}
+
+
+function timer() {
+    ss++; 
+
+    if (ss == 60) { 
+        ss = 0; 
+        mm++; 
+
+        if (mm == 60) { 
+            mm = 0;
+            hh++;
+        }
+    }
+
+   
+    var format = (hh < 10 ? '0' + hh : hh) + ':' + (mm < 10 ? '0' + mm : mm) + ':' + (ss < 10 ? '0' + ss : ss);
+    
+    
+    document.getElementById('counter').innerText = format;
+
+  
+    return format;
+}
